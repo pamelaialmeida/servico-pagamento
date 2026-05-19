@@ -98,4 +98,18 @@ describe('Testes da funcionalidade de Serviço de Pagamento', () => {
         );
     });
 
+    it('TC09 - Deve retornar último pagamento realizado corretamente quando consulta de último pagamento é realizada', () => {
+        servicoDePagamento.pagar('1111-1111-1111', 'Copel', 120.44);
+        servicoDePagamento.pagar('2222-2222-2222', 'Mastercard', 500.39);
+        servicoDePagamento.pagar('3333-3333-3333', 'Sanepar', 44.20);
+        servicoDePagamento.pagar('4444-4444-4444', 'Claro', 70.82);
+
+        const ultimoPagamento = servicoDePagamento.consultarUltimoPagamento();
+
+        assert.equal(ultimoPagamento.codigobarras, '4444-4444-4444');
+        assert.equal(ultimoPagamento.empresa, 'Claro');
+        assert.equal(ultimoPagamento.valor, 70.82);
+        assert.equal(ultimoPagamento.categoria, 'padrão');
+    });
+
 });
