@@ -24,7 +24,7 @@ console.log(servicoDePagamento.consultarUltimoPagamento());
 ## Estrutura do Projeto:
 
 ```bash
-desafio-login/                                  --> projeto
+servico-pagamento/                                  --> projeto
 │
 ├── mochawesome-report/                         --> diretório com relatório html gerado pelo mocha com os resultados dos testes
 │
