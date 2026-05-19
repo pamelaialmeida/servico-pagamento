@@ -1,0 +1,25 @@
+{
+  "name": "servico-pagamento",
+  "version": "1.0.0",
+  "description": "Crie uma classe que possua dois métodos: um para realizar pagamento e outro para consultar o último pagamento. Pagamentos serão armazenados como objetos Javascript dentro de uma lista de pagamentos. Cada pagamento terá as propriedades: Código de Barras, Empresa e Valor. Quando um pagamento for realizado e o valor for maior que 100.00, o pagamento também terá a propriedade categoria como 'cara', caso contrário, a propriedade categoria ficará como 'padrão'. O método de consultar trará apenas o último pagamento.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha --reporter mochawesome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pamelaialmeida/servico-pagamento.git"
+  },
+  "keywords": [],
+  "author": "Pâmela Inacio Almeida",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/pamelaialmeida/servico-pagamento/issues"
+  },
+  "homepage": "https://github.com/pamelaialmeida/servico-pagamento#readme",
+  "dependencies": {
+    "mocha": "^11.7.5",
+    "mochawesome": "^7.1.4"
+  }
+}
