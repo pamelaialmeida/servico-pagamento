@@ -21,5 +21,9 @@
   "dependencies": {
     "mocha": "^11.7.5",
     "mochawesome": "^7.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^10.5.0",
+    "prettier": "^3.8.4"
   }
 }
