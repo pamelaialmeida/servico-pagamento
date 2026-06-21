@@ -98,4 +98,4 @@ jobs:
         uses: ctrf-io/github-test-reporter@v1
         if: always()
         with:
-          file: ctrf/ctrf-report.json
+          report-path: ctrf/ctrf-report.json
