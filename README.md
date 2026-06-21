@@ -78,7 +78,7 @@ Como foi solicitado que utilizassemos o projeto desenvolvido na última matéria
 
 2. <u>Execução por push</u> -> fazendo com que a pipeline seja disparada de forma automática a cada vez que um envio de código é realizado para a branch _master_.
 
-3. <u>Execução agendada (schedule)</u> -> fazendo com que a pipeline seja disparada de forma automática a cada 10 minutos, através do gatilho _schedule_ com o tempo configurado em 'cron'.
+3. <u>Execução agendada (schedule)</u> -> fazendo com que a pipeline seja disparada de forma automática a cada 1 hora, através do gatilho _schedule_ com o tempo configurado em 'cron'.
 
 ### Etapas / Tarefas / Jobs
 

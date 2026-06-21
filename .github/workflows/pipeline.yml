@@ -14,7 +14,7 @@ on:
   # execução agendada:
   schedule:
     # execução agendada para cada 10 min inicialmente
-    - cron: "*/10 * * * *"
+    - cron: "0 * * * *"
 
 # tarefas / etapas da pipeline
 jobs:
