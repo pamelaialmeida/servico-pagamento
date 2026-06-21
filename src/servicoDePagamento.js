@@ -41,9 +41,7 @@ export default class ServicoDePagamento {
     }
 
     if (valorPagamento <= 0) {
-      throw new Error(
-        "Valor informado deve ser um número maior que zero.",
-      );
+      throw new Error("Valor informado deve ser um número maior que zero.");
     }
 
     if (

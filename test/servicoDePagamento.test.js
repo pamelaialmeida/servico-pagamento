@@ -165,7 +165,7 @@ describe("Testes da funcionalidade de Serviço de Pagamento", () => {
       function () {
         servicoDePagamento.pagar("5620-5687-3020", "Sephora", 0.0);
       },
-      { message: "Valor informado deve ser um número maior ou igual a zero." },
+      { message: "Valor informado deve ser um número maior que zero." },
     );
   });
 
@@ -174,7 +174,7 @@ describe("Testes da funcionalidade de Serviço de Pagamento", () => {
       function () {
         servicoDePagamento.pagar("1122-3344-5566", "Walmart", -120.32);
       },
-      { message: "Valor informado deve ser um número maior ou igual a zero." },
+      { message: "Valor informado deve ser um número maior que zero." },
     );
   });
 

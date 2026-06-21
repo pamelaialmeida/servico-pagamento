@@ -3,3 +3,4 @@ node_modules/
 
 # Tests report
 mochawesome-report/
+ctrf/
