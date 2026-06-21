@@ -92,3 +92,10 @@ jobs:
         with:
           name: relatorio-testes-unitarios
           path: mochawesome-report/
+
+      # exibir sumário do resultado dos testes no GitHub Actions
+      - name: Exibindo sumário de testes unitários
+        uses: ctrf-io/github-actions-ctrf-summary-action@v1
+        if: always()
+        with:
+          file: ctrf/ctrf-report.json

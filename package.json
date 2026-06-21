@@ -4,7 +4,7 @@
   "description": "Crie uma classe que possua dois métodos: um para realizar pagamento e outro para consultar o último pagamento. Pagamentos serão armazenados como objetos Javascript dentro de uma lista de pagamentos. Cada pagamento terá as propriedades: Código de Barras, Empresa e Valor. Quando um pagamento for realizado e o valor for maior que 100.00, o pagamento também terá a propriedade categoria como 'cara', caso contrário, a propriedade categoria ficará como 'padrão'. O método de consultar trará apenas o último pagamento.",
   "main": "index.js",
   "scripts": {
-    "test": "npx mocha --reporter mochawesome"
+    "test": "npx mocha --reporter mocha-multi-reporters --reporter-options configFile=reporter-config.json"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,8 @@
     "@eslint/js": "^10.0.1",
     "eslint": "^10.5.0",
     "globals": "^17.6.0",
+    "mocha-ctrf-json-reporter": "^0.0.11",
+    "mocha-multi-reporters": "^1.5.1",
     "prettier": "^3.8.4"
   }
 }
