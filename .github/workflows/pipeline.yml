@@ -92,3 +92,12 @@ jobs:
         with:
           name: relatorio-testes-unitarios
           path: mochawesome-report/
+
+      # exibir relatório de testes na interface do GitHub Actions
+      - name: Exibindo relatório de testes unitários
+        uses: dorny/test-reporter@v1
+        if: always()
+        with:
+          name: Testes Unitários
+          path: mochawesome-report/mochawesome.json
+          reporter: mochawesome-json
