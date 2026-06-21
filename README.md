@@ -74,11 +74,11 @@ Como foi solicitado que utilizassemos o projeto desenvolvido na última matéria
 
 **Gatilhos** definem os eventos que irão disparar o fluxo da pipeline. Conforme solicitado, para este projeto foram utilizados 3 possíveis gatilhos:
 
-1. <u>Execução manual</u> -> permitindo que a pipeline seja disparada de forma manual pela aba Actions no Github, acionada através de um clique de botão, usando o gatilho *workflow_dispatch*.
+1. <u>Execução manual</u> -> permitindo que a pipeline seja disparada de forma manual pela aba Actions no Github, acionada através de um clique de botão, usando o gatilho _workflow_dispatch_.
 
-2. <u>Execução por push</u> -> fazendo com que a pipeline seja disparada de forma automática a cada vez que um envio de código é realizado para a branch *master*.
+2. <u>Execução por push</u> -> fazendo com que a pipeline seja disparada de forma automática a cada vez que um envio de código é realizado para a branch _master_.
 
-3. <u>Execução agendada (schedule)</u> -> fazendo com que a pipeline seja disparada de forma automática a cada 10 minutos, através do gatilho *schedule* com o tempo configurado em 'cron'.
+3. <u>Execução agendada (schedule)</u> -> fazendo com que a pipeline seja disparada de forma automática a cada 10 minutos, através do gatilho _schedule_ com o tempo configurado em 'cron'.
 
 ### Etapas / Tarefas / Jobs
 
@@ -91,4 +91,4 @@ No caso da pipeline desenvolvida para este trabalho, a mesma é composta por doi
 
 ### Dependência entre Etapas / Tarefas / Jobs
 
-Como foi ensinado em aula a dependência entre jobs, resolvi implementar um exemplo neste trabalho. Para isso, utilizei o *needs* na tarefa de *unit-tests*, criando uma dependência desta tarefa com a de *lint*. Isso significa que o job de testes unitários só será executado se o job de lint passar com sucesso, garantindo a ordem de execução e evitando rodar etapas posteriores quando uma anterior já falhou.
+Como foi ensinado em aula a dependência entre jobs, resolvi implementar um exemplo neste trabalho. Para isso, utilizei o _needs_ na tarefa de _unit-tests_, criando uma dependência desta tarefa com a de _lint_. Isso significa que o job de testes unitários só será executado se o job de lint passar com sucesso, garantindo a ordem de execução e evitando rodar etapas posteriores quando uma anterior já falhou.
