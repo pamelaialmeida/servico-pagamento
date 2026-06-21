@@ -95,7 +95,7 @@ jobs:
 
       # exibir sumário do resultado dos testes no GitHub Actions
       - name: Exibindo sumário de testes unitários
-        uses: ctrf-io/github-actions-ctrf-summary-action@v1
+        uses: ctrf-io/github-test-reporter@v1
         if: always()
         with:
           file: ctrf/ctrf-report.json
