@@ -3,6 +3,9 @@ name: "Pipeline Trabalho de Conclusão"
 
 # gatilhos
 on:
+  # execução manual
+  workflow_dispatch:
+
   # execução por push
   push:
     branches:
@@ -12,9 +15,6 @@ on:
   schedule:
     # execução agendada para cada 10 min inicialmente
     - cron: "*/10 * * * *"
-
-  # execução manual
-  workflow_dispatch:
 
 # tarefas / etapas da pipeline
 jobs:
@@ -92,12 +92,3 @@ jobs:
         with:
           name: relatorio-testes-unitarios
           path: mochawesome-report/
-
-      # exibir relatório de testes na interface do GitHub Actions
-      - name: Exibindo relatório de testes unitários
-        uses: dorny/test-reporter@v1
-        if: always()
-        with:
-          name: Testes Unitários
-          path: mochawesome-report/mochawesome.json
-          reporter: mochawesome-json
