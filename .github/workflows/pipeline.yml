@@ -99,3 +99,4 @@ jobs:
         if: always()
         with:
           report-path: ctrf/ctrf-report.json
+          summary-report: true
